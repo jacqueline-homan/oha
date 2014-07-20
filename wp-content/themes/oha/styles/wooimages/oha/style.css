@@ -1,0 +1,11 @@
+/*
+Theme Name:     Organic Health Alliance
+Theme URI:      http://example.com/
+Description:   	Theme for OHA website. Deps: bhinneka
+Author:         Dreamfed Interactive
+Author URI:     http://dreamfed.net
+Template:       bhinneka
+Version:        0.1.0
+*/
+
+@import url("../bhinneka/style.css");

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - ohadev@mysql.dreamfed.com" uuid="f8c63e4f-06f0-4800-a6d5-8e42b4011b1f">
+      <secret-storage>master_key</secret-storage>
+      <user-name>ohadev</user-name>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>sunburn.dreamhost.com</proxy-host>
+        <proxy-port>22</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>ohadev</user>
+        <use-password>true</use-password>
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Http:ohadev.dreamhosters.com">
+    <serverData>
+      <paths name="Http:ohadev.dreamhosters.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ohadev.dreamhosters.com" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/Maildir" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

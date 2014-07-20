@@ -1,0 +1,24 @@
+/* Stuff for license checking */
+#wcrp-license-validation-icon {
+	display: inline-block;
+	width: 150px;
+	height: 16px;
+	position: relative;
+	top: 2px;
+	padding-left: 20px;
+}
+
+.wcrp-license-valid {
+	background: url('../assets/valid.png') 0 0 no-repeat;
+	color: #529943;
+}
+
+.wcrp-license-invalid {
+	background: url('../assets/invalid.png') 0 0 no-repeat;
+	color: #f00;
+}
+
+.wcrp-error {
+	color: red;
+	font-weight: bold;
+}
