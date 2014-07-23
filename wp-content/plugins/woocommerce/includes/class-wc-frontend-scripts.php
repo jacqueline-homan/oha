@@ -193,7 +193,8 @@ class WC_Frontend_Scripts {
 		// Enforce minimum version of jQuery
 		if ( ! empty( $wp_scripts->registered['jquery']->ver ) && ! empty( $wp_scripts->registered['jquery']->src ) && 0 >= version_compare( $wp_scripts->registered['jquery']->ver, '1.8' ) ) {
 			wp_deregister_script( 'jquery' );
-			wp_register_script( 'jquery', '/wp-includes/js/jquery/jquery.js', array(), '1.8' );
+			//wp_register_script( 'jquery', '/wp-includes/js/jquery/jquery.js', array(), '1.8' );
+			wp_register_script('jquery', ("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"), false, '2.1.1');
 			wp_enqueue_script( 'jquery' );
 		}
 	}

@@ -515,5 +515,4 @@ require_once TEMPLATEPATH . '/common-functions.php';
  */
 require_once ('admin/index.php');
 
-
 ?>

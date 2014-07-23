@@ -52,7 +52,7 @@ function oha_enqueue_scripts()
 {
 	//wp_deregister_script('jquery');
 	//wp_register_script('jquery', THEME_DIR.'/js/vendor/jquery.js');
-    wp_enqueue_script('jquery', 'http://code.jquery.com/jquery-2.1.1.min.js');
+	wp_enqueue_script('jquery');
 	wp_register_script( 'fancybox', THEME_DIR .'/js/fancybox/jquery.fancybox-1.3.4.js');
 	wp_register_script( 'custom-oha', THEME_DIR .'/js/custom.js', false,'.021');
 	$params = array( 'is_home' => is_front_page() );
@@ -206,3 +206,12 @@ function the_fb_sdk()
 	   }(document, /*debug*/ false));
 	</script><?php
 }
+
+function modify_jquery() {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', ("//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"), false, '2.1.1');
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'modify_jquery');
