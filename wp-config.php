@@ -7,13 +7,13 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
   	define('DB_NAME', 'ohadev');
 
 	/** MySQL database username */
-	define('DB_USER', 'ohadev');
+	define('DB_USER', 'root');
 
 	/** MySQL database password */
-	define('DB_PASSWORD', '95OOzNt6U2');
-
+	//define('DB_PASSWORD', '95OOzNt6U2');
+    define('DB_PASSWORD', 'abstract');
 	/** MySQL hostname */
-	define('DB_HOST', 'mysql.dreamfed.com');
+	define('DB_HOST', 'localhost');
 }
 
 /** Database Charset to use in creating database tables. */

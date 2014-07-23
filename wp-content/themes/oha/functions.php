@@ -52,7 +52,7 @@ function oha_enqueue_scripts()
 {
 	//wp_deregister_script('jquery');
 	//wp_register_script('jquery', THEME_DIR.'/js/vendor/jquery.js');
-	wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery', 'http://code.jquery.com/jquery-2.1.1.min.js');
 	wp_register_script( 'fancybox', THEME_DIR .'/js/fancybox/jquery.fancybox-1.3.4.js');
 	wp_register_script( 'custom-oha', THEME_DIR .'/js/custom.js', false,'.021');
 	$params = array( 'is_home' => is_front_page() );

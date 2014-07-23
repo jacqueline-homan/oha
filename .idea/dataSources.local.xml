@@ -13,6 +13,10 @@
         <use-password>true</use-password>
       </ssh-properties>
     </data-source>
+    <data-source name="MySQL - ohadev@127.0.0.1" uuid="a4e00b5f-e75f-48ce-8fd3-3c28b453f864">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+    </data-source>
   </component>
 </project>
 
