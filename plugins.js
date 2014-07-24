@@ -5,4 +5,4 @@
 
 // wp-includes/js/
 
-/*  /home/jacqueline/public_html/oha/pluggins.js
+/*  /home/jacqueline/public_html/oha/plugins.js
