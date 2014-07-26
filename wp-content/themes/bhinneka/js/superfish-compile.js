@@ -78,6 +78,7 @@
 		};
 
 		// bind the function to the two event listeners
+		console.log("HI");
 		return this.mouseover(handleHover).mouseout(handleHover);
 	};
 	
@@ -156,8 +157,8 @@
 	sf.op = {};
 	sf.IE7fix = function(){
 		var o = sf.op;
-		if ($.browser.msie && $.browser.version > 6 && o.dropShadows && o.animation.opacity!=undefined)
-			this.toggleClass(sf.c.shadowClass+'-off');
+		//if ($.browser.msie && $.browser.version > 6 && o.dropShadows && o.animation.opacity!=undefined)
+		//	this.toggleClass(sf.c.shadowClass+'-off');
 		};
 	sf.c = {
 		bcClass     : 'sf-breadcrumb',
@@ -186,8 +187,9 @@
 			var o = sf.op,
 				not = (o.retainPath===true) ? o.$path : '';
 			o.retainPath = false;
-			var $ul = $(['li.',o.hoverClass].join(''),this).add(this).not(not).removeClass(o.hoverClass)
-					.find('>ul').hide().css('visibility','hidden');
+			var $ul = $(['li'], o.hoverClass).find('*').css('visibility', 'hidden');
+			//var $ul = $(['li.',o.hoverClass].join(''),this).add(this).not(not).removeClass(o.hoverClass)
+			//		.find('>ul').hide().css('visibility','hidden');
 			o.onHide.call($ul);
 			return this;
 		},

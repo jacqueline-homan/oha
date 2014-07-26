@@ -615,3 +615,16 @@ input[type="submit"] { cursor: pointer; }
 	}
 	.ie9 .social_toolbox { display: none; }
 }
+
+.sub-menu {
+
+}
+
+.sub-menu:hover {
+
+}
+
+.menu-item .sub-menu:hover a, .menu-item .sub-menu:hover ul {
+    display:block;
+    visibility:visible;
+}
