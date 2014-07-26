@@ -1085,3 +1085,13 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 /* Provide higher res assets for iPhone 4 - preset code from cssgrid.net */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 }
+
+
+.sub-menu {
+
+}
+
+ul#menu-final-menu:hover li.menu-item.menu-item-has-children ul.sub-menu {
+    display:block;
+    visibility:visible;
+}
